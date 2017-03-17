@@ -1,5 +1,5 @@
-# pass-crypt.py
-pass-crypt.py, or just pass-crypt, is a tool for encrypt passwords in .pass files.
+# pass_crypt
+pass_crypt.py, or just pass_crypt, is a tool for encrypt passwords in .pass files.
 
 It uses 'pycrypto' to encrypt, save, decrypt and display passwords, but you can use it for another purposes, of course.
 
