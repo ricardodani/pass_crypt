@@ -15,9 +15,13 @@ A python script tool for vault passwords based on simple-crypto's library
 
     ```
     Type text to encrypt:
+    
     My text of test
+    
     Type password: 123
+    
     Confirm password: 123
+    
     Done.
     ```
     
