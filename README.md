@@ -3,14 +3,22 @@ pass_crypt.py, or just pass_crypt, is a tool for encrypt passwords in .pass file
 
 It uses 'pycrypto' to encrypt, save, decrypt and display passwords, but you can use it for another purposes, of course.
 
-## Tested on
 
-- Python 3.X
+## Development
 
-## Development install
+### To install
 
     $ git clone git@github.com:ricardodani/pass_crypt && cd pass_crypt
     $ pip install -r requirements.txt
+
+### To test
+
+    $ py.test
+
+### Tested on
+
+- Python 3.X
+
 
 ## Using
 
