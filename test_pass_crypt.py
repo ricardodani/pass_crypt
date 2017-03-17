@@ -37,7 +37,7 @@ class TestPassCrypt(unittest.TestCase):
         # accessing it
         self.assertEqual(
             self.pc.read_encrypted(self.TEST_PASSWORD),
-            b'text to encrypt'
+            'text to encrypt'
         )
 
     def test_invalid_password(self):
