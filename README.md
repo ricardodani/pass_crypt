@@ -17,7 +17,7 @@ It uses 'pycrypto' to encrypt, save, decrypt and display passwords, but you can 
 
 ### Tested on
 
-- Python 3.X
+- Python 3.6.0
 
 
 ## Using
