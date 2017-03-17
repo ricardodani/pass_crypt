@@ -7,10 +7,10 @@ It uses 'pycrypto' to encrypt, save, decrypt and display passwords, but you can 
 
 - Python 3.X
 
-## Development
+## Development install
 
     $ git clone git@github.com:ricardodani/pass_crypt && cd pass_crypt
-    $ python pass_crypt.py /path/to/my/vaulted.pass
+    $ pip install -r requirements.txt
 
 ## Using
 
