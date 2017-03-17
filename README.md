@@ -20,7 +20,7 @@ Type password: 123
 Confirm password: 123
 Done.
 ```
-    
+ 
 ### To read a vaulted file, use the same command after create it
 
     $ ./pass_crypt.py name-of-my-encrypted-file.pass
@@ -33,3 +33,12 @@ My text of test
 ```
     
 - Simple, huhn?
+
+## Author
+
+Ricardo Lapa Dani
+ricardodani@gmail.com
+
+## LICENSE
+
+GPL 3.0
