@@ -70,11 +70,8 @@ class PassCrypt(object):
 
 class Main(object):
 
-    def __init__(self, *args):
-        try:
-            self.filename = args[0]
-        except:
-            raise MissingFilenameArgument
+    def __init__(self, filename):
+        self.filename = filename
         try:
             self.run()
         except Exception as e:
@@ -115,4 +112,8 @@ class Main(object):
 
 
 if __name__ == '__main__':
-    Main(*sys.argv[1:])
+    try:
+        password_path = sys.argv[1]
+        Main(password_path)
+    except:
+        raise MissingFilenameArgument
