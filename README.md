@@ -1,6 +1,10 @@
 # py-simple-vault
 A python script tool for vault passwords based on simple-crypto's library
 
+## Requirements
+
+- Python 3.X
+
 ## Installing
 
     pip install -r requirements.txt
