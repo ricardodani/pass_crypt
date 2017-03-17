@@ -14,6 +14,7 @@ A python script tool for vault passwords based on simple-crypto's library
 - It will ask for the content you want to encrypts, and the password (with confirmation) you want to encrypt it with:
 
     ```
+    
     Type text to encrypt:
     
     My text of test
@@ -32,7 +33,9 @@ A python script tool for vault passwords based on simple-crypto's library
 - It will ask for the password and return the decrypted content:
 
     ```
+    
     Type password: 123
+    
     My text of test
     ```
     
