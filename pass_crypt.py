@@ -1,5 +1,8 @@
+#!/usr/bin/env python
+
 import os
 import sys
+import getpass
 from simplecrypt import encrypt, decrypt
 
 class NotFoundEncryptedPass(Exception):
@@ -28,6 +31,10 @@ class InvalidTextToEncrypt(Exception):
 
 class NotPossibleToWrite(Exception):
     message = 'The destiny path is not writable or the folder didn`t exists.'
+
+
+class TooShortPassword(Exception):
+    message = 'Password should have at least 6 characters.'
 
 
 class PassCrypt(object):
@@ -73,11 +80,14 @@ class Main(object):
         except Exception as e:
             print (e.message)
 
+
     @staticmethod
     def read_password(confirm=False):
-        password = input('Type password: ')
+        password = getpass.getpass('Type password: ')
+        if len(password) < 6:
+            raise TooShortPassword
         if confirm:
-            confirm_password = input('Type password: ')
+            confirm_password = getpass.getpass('Confirm password: ')
             if password != confirm_password:
                 raise PasswordsDidntMatch
         return password
