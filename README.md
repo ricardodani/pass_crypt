@@ -1,13 +1,16 @@
-# py-simple-vault
-A python script tool for vault passwords based on simple-crypto's library
+# pass-crypt.py
+pass-crypt.py, or just pass-crypt, is a tool for encrypt passwords in .pass files.
 
-## Requirements
+It uses 'pycrypto' to encrypt, save, decrypt and display passwords, but you can use it for another purposes, of course.
+
+## Tested on
 
 - Python 3.X
 
-## Installing
+## Development
 
-    pip install -r requirements.txt
+    $ git clone git@github.com:ricardodani/pass_crypt && cd pass_crypt
+    $ python pass_crypt.py /path/to/my/vaulted.pass
 
 ## Using
 
@@ -15,34 +18,19 @@ A python script tool for vault passwords based on simple-crypto's library
 
     $ ./pass_crypt.py name-of-my-encrypted-file.pass
 
-- It will ask for the content you want to encrypts, and the password (with confirmation) you want to encrypt it with:
-
 ```
 Type text to encrypt:
 My text of test
-Type password: 123
-Confirm password: 123
+Type password:
+Confirm password:
 Done.
 ```
  
-### To read a vaulted file, use the same command after create it
+### To read a vaulted file, use the same command after the creation
 
     $ ./pass_crypt.py name-of-my-encrypted-file.pass
 
-- It will ask for the password and return the decrypted content:
-
 ```
-Type password: 123
+Type password:
 My text of test
 ```
-    
-- Simple, huhn?
-
-## Author
-
-Ricardo Lapa Dani
-ricardodani@gmail.com
-
-## LICENSE
-
-GPL 3.0
