@@ -13,7 +13,6 @@ A python script tool for vault passwords based on simple-crypto's library
 
 - It will ask for the content you want to encrypts, and the password (with confirmation) you want to encrypt it with:
 
-    ```
     
     Type text to encrypt:
     
@@ -24,7 +23,6 @@ A python script tool for vault passwords based on simple-crypto's library
     Confirm password: 123
     
     Done.
-    ```
     
 ### To read a vaulted file, use the same command after create it
 
